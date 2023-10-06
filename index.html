@@ -6,88 +6,118 @@
     <title>Fauna Urbana</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
 <body>
+
     <header class="header">
-        <div class="contenedorlogo">
-            <a href="#">
-                <img class="logo" src="./assets/img/AdobeStock_191203691.png" alt="Logo Fauna">
-            </a>
-            <h1 class="tituloWEB">
-                Fauna Urbana
-            </h1>
-        </div>
-        <nav class="navegacion">
-            <ul class="listaNav">
-                <li class="listaItem"><a class="linkNav" href="#">Inicio</a></li>
-                <li class="listaItem"><a class="linkNav" href="pages/acerca.html">Acerca</a></li>
-                <li class="listaItem"><a class="linkNav" href="pages/adopciones.html">Adopciones</a></li>
-                <li class="listaItem"><a class="linkNav" href="pages/Rescatados.html">Rescatados</a></li>
-                <li class="listaItem"><a class="linkNav" href="pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex flex-column flex-lg-row align-items-lg-center" href="#">
+                    <img class="logo" src="./assets/img/Logo1.png" alt="Logo Fauna">
+                    <h1 class="tituloWEB ml-lg-3 mb-0">Fauna Urbana</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link linkNav" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link linkNav" href="pages/acerca.html">Acerca</a></li>
+                        <li class="nav-item"><a class="nav-link linkNav" href="pages/adopciones.html">Adopciones</a></li>
+                        <li class="nav-item"><a class="nav-link linkNav" href="pages/Rescatados.html">Rescatados</a></li>
+                        <li class="nav-item"><a class="nav-link linkNav" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section>
             <div>
-                <div class="imagenMain">
-                    <img class="img" src="./assets/img/AdobeStock_191203691.png" alt="Logo Fauna">
+                <div id="carouselExampleControls" class="carousel slide imagenMain">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img" src="./assets/img/AdobeStock_634389276.jpeg" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img" src="./assets/img/AdobeStock_610529080.jpeg" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img" src="./assets/img/AdobeStock_236992283.jpeg" alt="Slide 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
                 <div class="parrafoMain">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto reprehenderit odit porro quam dignissimos beatae nulla fuga. Dicta in unde provident fuga ea blanditiis numquam, consequuntur molestiae consequatur quis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum, officia dicta tenetur voluptatem commodi et eum veniam incidunt id beatae eius, omnis sint facere totam accusantium sit labore dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut delectus recusandae quaerat maiores id architecto quisquam sapiente, assumenda facilis porro natus dicta. Qui quidem, fugit sed error dolor molestias labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quam porro magnam dolor hic ut dolores consequatur, provident saepe vel autem, dolorum blanditiis similique sunt repellat labore corrupti nemo veniam? </p>
+                    <p>Fundación Fauna Urbana es una organización sin fines de lucro con sede en Buenos Aires, Argentina, comprometida con la protección y el bienestar de los animales. Nuestra misión es brindar refugio, cuidado y una segunda oportunidad a los animales abandonados y maltratados de la ciudad. Desde nuestros humildes comienzos, hemos trabajado incansablemente para mejorar la vida de los animales necesitados y crear conciencia sobre la importancia de la adopción y el respeto hacia todas las formas de vida.</p> 
                 </div>
-            
             </div>
         </section>
         <section>
-            <h2 class="Subtitulo">subtitulo</h2>
+            <h2 class="Subtitulo">Algunas de nuestras historia</h2>
         </section>
 
         
         <section>
             <div class="aLaIzquierda">
-                <img src="./assets/img/AdobeStock_191203691.png" alt="Logo Fauna"  class="imagenIzquierda">
-                <p class="parrafoDerecha">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam atque numquam ducimus repellendus dignissimos doloribus quo? Similique, voluptatum. Voluptates veritatis, facilis voluptatum corrupti error esse aut hic laboriosam. Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat qui vel quidem dignissimos sed odio commodi, est natus assumenda similique nobis nihil, aut ipsum molestias eveniet doloribus placeat nulla?</p>
+                <img src="./assets/img/AdobeStock_322048853.jpeg" alt="Logo Fauna"  class="imagenIzquierda">
+                <p class="parrafoDerecha">Max, un pastor alemán, fue encontrado abandonado en un parque local. Estaba exhausto y famélico, pero su espíritu era indomable. Su pelaje enmarañado ocultaba heridas de su difícil vida en las calles. Después de un tratamiento veterinario y amorosos cuidados, Max se recuperó por completo. Ahora, este perro valiente es un terapeuta canino, visitando hospitales y brindando amor a quienes más lo necesitan.</p>
             </div>
         </section>
 
         <section>
             <div class="aLaDerecha">
-                <img src="./assets/img/AdobeStock_191203691.png" alt="Logo Fauna" class="imagenDerecha">
-                <p class="parrafoIzquierda">LLorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam atque numquam ducimus repellendus dignissimos doloribus quo? Similique, voluptatum. Voluptates veritatis, facilis voluptatum corrupti error esse aut hic laboriosam. Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat qui vel quidem dignissimos sed odio commodi, est natus assumenda similique nobis nihil, aut ipsum molestias eveniet doloribus placeat nulla?</p>
+                <img src="./assets/img/AdobeStock_266724172.jpeg" alt="Logo Fauna" class="imagenDerecha">
+                <p class="parrafoIzquierda">Luna, una gata negra y traviesa, fue rescatada de un refugio abrumado. Su historia era un misterio, pero su espíritu juguetón era evidente. En su nuevo hogar, Luna trajo risas y alegría. Su amor por los juegos y su personalidad cariñosa conquistaron los corazones de su familia adoptiva. Luna demuestra que incluso los gatos negros, a menudo pasados por alto, tienen un lugar especial en el hogar.</p>
             </div>
         </section>
 
         <section>
             <div class="aLaIzquierda">
-                <img src="./assets/img/AdobeStock_191203691.png" alt="Logo Fauna"  class="imagenIzquierda">
-                <p class="parrafoDerecha">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam atque numquam ducimus repellendus dignissimos doloribus quo? Similique, voluptatum. Voluptates veritatis, facilis voluptatum corrupti error esse aut hic laboriosam. Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat qui vel quidem dignissimos sed odio commodi, est natus assumenda similique nobis nihil, aut ipsum molestias eveniet doloribus placeat nulla?</p>
+                <img src="./assets/img/AdobeStock_250628313.jpeg" alt="Logo Fauna"  class="imagenIzquierda">
+                <p class="parrafoDerecha">Rocky, un pequeño mestizo, fue víctima de un accidente automovilístico. Abandonado en una carretera, fue encontrado con una pata fracturada y asustado. Gracias a la cirugía y terapia física, Rocky superó su lesión. Ahora es un perro activo y feliz, disfrutando de largos paseos y jugando con su familia. Su espíritu de supervivencia inspira a todos los que lo conocen.</p>
             </div>
         </section>
 
         <section>
             <div class="aLaDerecha">
-                <img src="./assets/img/AdobeStock_191203691.png" alt="Logo Fauna" class="imagenDerecha">
-                <p class="parrafoIzquierda">LLorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam atque numquam ducimus repellendus dignissimos doloribus quo? Similique, voluptatum. Voluptates veritatis, facilis voluptatum corrupti error esse aut hic laboriosam. Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat qui vel quidem dignissimos sed odio commodi, est natus assumenda similique nobis nihil, aut ipsum molestias eveniet doloribus placeat nulla?</p>
+                <img src="./assets/img/AdobeStock_256253532.jpeg" alt="Logo Fauna" class="imagenDerecha">
+                <p class="parrafoIzquierda">Bella, una gata callejera de mirada triste, fue rescatada en una noche fría. Su pelaje estaba sucio y descuidado, pero su dulce naturaleza brillaba. Después de meses de amor y cuidados, Bella se convirtió en una gata amorosa y confiada. Ahora, es la compañera leal de su dueño, disfrutando de siestas al sol y ronroneando en su regazo. Bella demuestra cómo el amor y la paciencia pueden transformar vidas.
+                </p>
             </div>
         </section>
     
     <footer class="imagenFooter footer">
-        <section class="elementoInlineBlock">
+        <div class="elementoInlineBlock">
             <h3>Horario de atencion</h3>
             <p>Lunes a Viernes de 11:00 a 18:00</p>
-        </section>
-        <section class="elementoInlineBlock">
+        </div>
+        <div class="elementoInlineBlock">
             <h3>Contacto</h3>
             <p>011-12345678</p>
             <p>contacto@faunaurbana.com</p>
-        </section>
-        <section class="elementoInlineBlock">
+        </div>
+        <div class="elementoInlineBlock">
             <h3>Redes Sociales</h3>
             <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp redes "></i></a>
-            <a href="https://www.facebook.com/"  target="_blank"><i class="fa-brands fa-facebook redes"></i></a>
-        </section>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook redes"></i></a>
+        </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var myCarousel = document.querySelector('#carouselExampleControls');
+            var carousel = new bootstrap.Carousel(myCarousel);
+        });
+    </script>
 </body>
 </html>
