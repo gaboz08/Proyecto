@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -36,7 +38,13 @@
     <main>
         <section>
             <div>
-                <div id="carouselExampleControls" class="carousel slide imagenMain">
+                <div id="carouselExampleControls" class="carousel slide imagenMain" data-bs-ride="carousel" data-bs-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+                    </ol>
+                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100 img" src="./assets/img/AdobeStock_634389276.jpeg" alt="Slide 1">
@@ -68,28 +76,28 @@
 
         
         <section>
-            <div class="aLaIzquierda">
+            <div class="aLaIzquierda" data-aos="fade-up">
                 <img src="./assets/img/AdobeStock_322048853.jpeg" alt="Logo Fauna"  class="imagenIzquierda">
                 <p class="parrafoDerecha">Max, un pastor alemán, fue encontrado abandonado en un parque local. Estaba exhausto y famélico, pero su espíritu era indomable. Su pelaje enmarañado ocultaba heridas de su difícil vida en las calles. Después de un tratamiento veterinario y amorosos cuidados, Max se recuperó por completo. Ahora, este perro valiente es un terapeuta canino, visitando hospitales y brindando amor a quienes más lo necesitan.</p>
             </div>
         </section>
 
         <section>
-            <div class="aLaDerecha">
+            <div class="aLaDerecha" data-aos="fade-up">
                 <img src="./assets/img/AdobeStock_266724172.jpeg" alt="Logo Fauna" class="imagenDerecha">
                 <p class="parrafoIzquierda">Luna, una gata negra y traviesa, fue rescatada de un refugio abrumado. Su historia era un misterio, pero su espíritu juguetón era evidente. En su nuevo hogar, Luna trajo risas y alegría. Su amor por los juegos y su personalidad cariñosa conquistaron los corazones de su familia adoptiva. Luna demuestra que incluso los gatos negros, a menudo pasados por alto, tienen un lugar especial en el hogar.</p>
             </div>
         </section>
 
         <section>
-            <div class="aLaIzquierda">
+            <div class="aLaIzquierda" data-aos="fade-up">
                 <img src="./assets/img/AdobeStock_250628313.jpeg" alt="Logo Fauna"  class="imagenIzquierda">
                 <p class="parrafoDerecha">Rocky, un pequeño mestizo, fue víctima de un accidente automovilístico. Abandonado en una carretera, fue encontrado con una pata fracturada y asustado. Gracias a la cirugía y terapia física, Rocky superó su lesión. Ahora es un perro activo y feliz, disfrutando de largos paseos y jugando con su familia. Su espíritu de supervivencia inspira a todos los que lo conocen.</p>
             </div>
         </section>
 
         <section>
-            <div class="aLaDerecha">
+            <div class="aLaDerecha" data-aos="fade-up">
                 <img src="./assets/img/AdobeStock_256253532.jpeg" alt="Logo Fauna" class="imagenDerecha">
                 <p class="parrafoIzquierda">Bella, una gata callejera de mirada triste, fue rescatada en una noche fría. Su pelaje estaba sucio y descuidado, pero su dulce naturaleza brillaba. Después de meses de amor y cuidados, Bella se convirtió en una gata amorosa y confiada. Ahora, es la compañera leal de su dueño, disfrutando de siestas al sol y ronroneando en su regazo. Bella demuestra cómo el amor y la paciencia pueden transformar vidas.
                 </p>
@@ -113,6 +121,9 @@
         </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var myCarousel = document.querySelector('#carouselExampleControls');

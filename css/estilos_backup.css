@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../assets/fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('../assets/fonts/Oswald-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald-Regular', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-image: url("../assets/img/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    margin-right: 30px;
+}
+
+.tituloWEB {
+    font-family: 'Oswald-Bold';
+    font-size: 5rem;
+    text-align: right;
+}
+
+.imagenFooter {
+    background-image: url("../assets/img/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.elementoInlineBlock {
+    display: inline-block;
+    width: 31%;
+    margin: 20px 1%;
+    text-align: center;
+}
+
+.redes {
+    font-size: 3rem;
+    color: black;
+    margin-right: 10px;
+}
+
+.footer {
+    color: black;
+    background-color: lightgray;
+}
+
+.imagenMain {
+    width: 100%;
+}
+
+.imagenMain .img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.parrafoMain {
+    width: 100%;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.aLaDerecha,
+.aLaIzquierda {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.aLaDerecha .imagenDerecha,
+.aLaIzquierda .imagenIzquierda {
+    width: 30%;
+}
+
+.aLaDerecha .imagenDerecha {
+    float: right;
+    margin-right: 20px;
+}
+
+.aLaIzquierda .imagenIzquierda {
+    float: left;
+    margin-right: 20px;
+}
+
+.aLaDerecha .parrafoIzquierda,
+.aLaIzquierda .parrafoDerecha {
+    display: block;
+    width: 65%;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    height: 100%;
+    overflow: auto;
+}
+
+.Subtitulo {
+    font-family: 'PTSans-Regular';
+    font-size: 2rem;
+    width: 80%;
+    margin: 100px auto 50px auto; /* 100px es el margen superior */
+    text-align: center;
+}
+
+.aLaDerecha::after,
+.aLaIzquierda::after {
+    content: "";
+    display: table;
+    clear: both;
+}
