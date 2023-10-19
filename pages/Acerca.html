@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -38,14 +40,14 @@
     </section>
     
     <section>
-        <div class="aLaDerecha">
+        <div class="aLaDerecha" data-aos="fade-up">
             <img src="../assets/img/AdobeStock_610652891.jpeg" alt="Logo Fauna" class="imagenDerecha">
             <p class="parrafoIzquierda">Fundada en 2005 por un grupo de amantes de los animales, Fundación Fauna Urbana ha crecido y evolucionado a lo largo de los años. Nuestra organización comenzó como un pequeño refugio de animales callejeros en el corazón de Buenos Aires. Con el tiempo, nuestro compromiso y dedicación atrajeron a un grupo diverso de voluntarios apasionados que compartían nuestra visión de un mundo donde todos los animales son tratados con amor y compasión.</p>
         </div>
     </section>
 
     <section>
-        <div class="aLaIzquierda">
+        <div class="aLaIzquierda" data-aos="fade-up">
             <img src="../assets/img/AdobeStock_620075869.jpeg" alt="Logo Fauna"  class="imagenIzquierda">
             <p class="parrafoDerecha">A lo largo de los años, hemos rescatado y rehabilitado innumerables perros y gatos, brindándoles atención veterinaria, refugio y cariño. También hemos trabajado en estrecha colaboración con la comunidad para educar sobre la importancia de la esterilización, la adopción responsable y el respeto por los derechos de los animales.</p>
         </div>
@@ -53,22 +55,22 @@
     
     
     <section>
-        <h2 class="Subtitulo">Nuestra Misión</h2>
+        <h2 class="Subtitulo" data-aos="fade-up" >Nuestra Misión</h2>
     </section>
     
     <section>
-        <div class="aLaDerecha">
+        <div class="aLaDerecha" data-aos="fade-up">
             <img src="../assets/img/AdobeStock_620424826.jpeg" alt="Logo Fauna" class="imagenDerecha">
             <p class="parrafoIzquierda">En Fundación Fauna Urbana, creemos que todos los animales merecen una vida digna y feliz. Nuestra misión es rescatar y rehabilitar animales abandonados, heridos o maltratados, brindándoles atención médica y emocional de alta calidad. Además, promovemos la adopción responsable como la mejor opción para dar un hogar a los animales necesitados. También, fomentamos la esterilización y la atención veterinaria adecuada para prevenir el sufrimiento innecesario de los animales. Sensibilizamos a la comunidad sobre la importancia del respeto por los derechos de los animales y la empatía hacia todas las criaturas vivientes.</p>
         </div>
     </section>
 
     <section>
-        <h2 class="Subtitulo">Nuestra Misión</h2>
+        <h2 class="Subtitulo" data-aos="fade-up">Nuestra Misión</h2>
     </section>
     
     <section>
-        <div class="aLaIzquierda">
+        <div class="aLaIzquierda" data-aos="fade-up">
             <img src="../assets/img/AdobeStock_625973309.jpeg" alt="Logo Fauna"  class="imagenIzquierda">
             <p class="parrafoDerecha">A lo largo de los años, hemos logrado avances significativos en la causa de los derechos de los animales en Buenos Aires. Algunos de nuestros logros más destacados incluyen la adopción exitosa de miles de animales en hogares amorosos, campañas de esterilización que han ayudado a controlar la población de animales callejeros, programas educativos en escuelas locales para enseñar a los niños sobre la empatía y el respeto por los animales, y colaboración con otras organizaciones locales para rescatar y rehabilitar animales en situaciones de emergencia.</p>
         </div>
@@ -92,6 +94,10 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var myCarousel = document.querySelector('#carouselExampleControls');
