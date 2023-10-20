@@ -24,7 +24,13 @@ body {
   text-align: center;
 }
 
-header, .imagenFooter {
+.Subtitulo {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer, .imagenFooter {
   background-image: url("../assets/img/footer.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -32,34 +38,11 @@ header, .imagenFooter {
   width: 100%;
 }
 
-.logo {
-  max-width: 200px;
-  height: auto;
-  margin-right: 20px;
-}
-
-.navbar-nav {
-  text-align: right;
-}
-
-.linkNav {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  margin-right: 30px;
-}
-
 .elementoInlineBlock {
   display: inline-block;
   width: 31%;
   margin: 20px 1%;
   text-align: center;
-}
-
-.redes {
-  font-size: 3rem;
-  color: black;
-  margin-right: 10px;
 }
 
 .footer {
@@ -76,6 +59,57 @@ header, .imagenFooter {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.redes {
+  font-size: 3rem;
+  color: black;
+  margin-right: 10px;
+}
+.redes:hover {
+  color: #e6e6e6;
+}
+
+.contactoRedes h3 {
+  margin-top: 20px;
+}
+.contactoRedes p {
+  margin-bottom: 5px;
+}
+
+header {
+  background-image: url("../assets/img/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+header .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+header .navbar-brand .logo {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+header .navbar-brand .tituloWEB {
+  font-family: "Oswald-Bold", sans-serif;
+  font-size: 5rem;
+}
+@media (min-width: 900px) {
+  header .navbar-brand .tituloWEB {
+    margin-right: 300px;
+  }
+}
+header .navbar-nav {
+  text-align: right;
+}
+header .linkNav {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  margin-right: 30px;
 }
 
 .imagenMain {
@@ -115,16 +149,6 @@ header, .imagenFooter {
 
 .aLaIzquierda .imagenIzquierda {
   order: 0;
-}
-
-.tituloWEB {
-  font-family: "Oswald-Bold", sans-serif;
-  font-size: 5rem;
-}
-@media (min-width: 900px) {
-  .tituloWEB {
-    margin-right: 300px;
-  }
 }
 
 .Subtitulo {
@@ -208,13 +232,6 @@ header, .imagenFooter {
   max-width: 60%;
   margin: 0 auto;
   padding: 20px;
-}
-
-.contactoRedes h3 {
-  margin-top: 20px;
-}
-.contactoRedes p {
-  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

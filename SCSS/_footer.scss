@@ -1,0 +1,61 @@
+$main-background: url("../assets/img/footer.png");
+$main-text-color: black;
+$main-font-size: 2rem;
+$main-margin: 20px;
+$medium-screen: 768px;
+
+%centered-content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer, .imagenFooter {
+    background-image: $main-background;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.elementoInlineBlock {
+    display: inline-block;
+    width: 31%;
+    margin: $main-margin 1%;
+    text-align: center;
+}
+
+.footer {
+    color: $main-text-color;
+    background-color: lightgray;
+
+    iframe {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    @media (max-width: $medium-screen) {
+        .elementoInlineBlock {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+.redes {
+    font-size: $main-font-size + 1rem;
+    color: $main-text-color;
+    margin-right: $main-margin - 10px;
+    &:hover {
+        color: darken(white, 10%);
+    }
+}
+.contactoRedes {
+    h3 {
+        margin-top: 20px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+}

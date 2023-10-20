@@ -1,104 +1,9 @@
-$font-oswald-regular: 'Oswald-Regular', sans-serif;
-$font-oswald-bold: 'Oswald-Bold', sans-serif;
-$font-path: '../assets/fonts/';
-$main-background: url("../assets/img/footer.png");
-$main-text-color: black;
-$main-font-size: 2rem;
-$secondary-font-size: 2.1rem;
-$main-margin: 20px;
-$medium-screen: 768px;
-$large-margin: 300px;
-$large-font-size: 5rem;
 
-@mixin font-styles($font-family, $font-size) {
-    font-family: $font-family;
-    font-size: $font-size;
-}
-%centered-content {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-@font-face {
-    font-family: 'Oswald-Regular';
-    src: url($font-path + 'Oswald-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Oswald-Bold';
-    src: url($font-path + 'Oswald-Bold.ttf');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $font-oswald-regular;
-    line-height: 1.6;
-    text-align: center;
-}
-
-header, .imagenFooter {
-    background-image: $main-background;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-
-.logo {
-    max-width: 200px;
-    height: auto;
-    margin-right: $main-margin;
-}
-
-.navbar-nav {
-    text-align: right;
-}
-
-.linkNav {
-    text-decoration: none;
-    color: $main-text-color;
-    font-size: $main-font-size;
-    margin-right: $main-margin + 10px;
-}
-
-.elementoInlineBlock {
-    display: inline-block;
-    width: 31%;
-    margin: $main-margin 1%;
-    text-align: center;
-}
-
-.redes {
-    font-size: $main-font-size + 1rem;
-    color: $main-text-color;
-    margin-right: $main-margin - 10px;
-}
-
-.footer {
-    color: $main-text-color;
-    background-color: lightgray;
-        iframe {
-            width: 100%;
-            height: auto;
-            max-height: 200px;
-        }
-    
-    
-    
-    @media (max-width: $medium-screen) {
-        .elementoInlineBlock {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-    }
-}
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'footer';
+@import 'header';
 
 .imagenMain {
     width: 100%;
@@ -146,13 +51,7 @@ header, .imagenFooter {
     }
 }
 
-.tituloWEB {
-    @include font-styles($font-oswald-bold, $large-font-size);
 
-    @media (min-width: 900px) {
-        margin-right: $large-margin;
-    }
-}
 
 .Subtitulo {
     @extend %centered-content;
@@ -247,14 +146,4 @@ header, .imagenFooter {
     max-width: 60%;
     margin: 0 auto;
     padding: 20px;  
-}
-
-.contactoRedes {
-    h3 {
-        margin-top: 20px;
-    }
-
-    p {
-        margin-bottom: 5px;
-    }
 }

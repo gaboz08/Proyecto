@@ -1,0 +1,27 @@
+%centered-content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url($font-path + 'Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url($font-path + 'Oswald-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-oswald-regular;
+    line-height: 1.6;
+    text-align: center;
+}

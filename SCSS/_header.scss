@@ -1,0 +1,37 @@
+header {
+    background-image: $main-background;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-right: $main-margin;
+        }
+
+        .tituloWEB {
+            @include font-styles($font-oswald-bold, $large-font-size);
+
+            @media (min-width: 900px) {
+                margin-right: $large-margin;
+            }
+        }
+    }
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .linkNav {
+        text-decoration: none;
+        color: $main-text-color;
+        font-size: $main-font-size;
+        margin-right: $main-margin + 10px;
+    }
+}
