@@ -1,3 +1,9 @@
+.Subtitulo {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @font-face {
   font-family: "Oswald-Regular";
   src: url("../assets/fonts/Oswald-Regular.ttf");
@@ -43,16 +49,6 @@ header, .imagenFooter {
   margin-right: 30px;
 }
 
-.tituloWEB {
-  font-family: "Oswald-Bold", sans-serif;
-  font-size: 5rem;
-}
-@media (min-width: 900px) {
-  .tituloWEB {
-    margin-right: 300px;
-  }
-}
-
 .elementoInlineBlock {
   display: inline-block;
   width: 31%;
@@ -69,6 +65,17 @@ header, .imagenFooter {
 .footer {
   color: black;
   background-color: lightgray;
+}
+.footer iframe {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+@media (max-width: 768px) {
+  .footer .elementoInlineBlock {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .imagenMain {
@@ -110,12 +117,21 @@ header, .imagenFooter {
   order: 0;
 }
 
+.tituloWEB {
+  font-family: "Oswald-Bold", sans-serif;
+  font-size: 5rem;
+}
+@media (min-width: 900px) {
+  .tituloWEB {
+    margin-right: 300px;
+  }
+}
+
 .Subtitulo {
   font-family: "PTSans-Regular";
   font-size: 2.3rem;
-  width: 80%;
-  margin: 50px auto 50px auto;
-  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .carousel-inner img {
@@ -192,6 +208,13 @@ header, .imagenFooter {
   max-width: 60%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.contactoRedes h3 {
+  margin-top: 20px;
+}
+.contactoRedes p {
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
