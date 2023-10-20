@@ -32,25 +32,50 @@
             </div>
         </nav>
     </header>
-    
+
     <section>
-        <form action="404.html" method="post">
-            <div>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-            </div>
-            <div>
-                <input type="date" id="fecha de nacimiento" name="fecha de nacimiento">
-            </div>
-            <div>
-                <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com" required>
-            </div>
-            <div>
-                <input type="reset" value="Limpiar Datos">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
+        <h2 class="Subtitulo">Formulario de adopcion</h2>
     </section>
+    
+    <form action="404.html" method="post" class="formulario-centrado">
+
+        <div class="mb-3">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+        </div>
+        <div class="mb-3">
+            <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@servidor.com" required>
+        </div>
+        <div class="mb-3">
+            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+        </div>
+        <div class="mb-3">
+            <select class="form-control" id="seleccionAnimal" name="seleccionAnimal">
+                <option value="" selected>Selecciona un animal</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+            </select>
+        </div>
+        <div class="mb-3" id="opcionesAnimales" style="display: none;">
+            <select class="form-control" name="opcionAnimal">
+                
+            </select>
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" name="sobreTi" id="sobreTi" rows="4" placeholder="Habla un poco sobre ti"></textarea>
+        </div>
+        <div class="mb-3">
+            <input type="reset" class="btn btn-secondary" value="Limpiar Datos">
+            <input type="submit" class="btn btn-primary" value="Enviar">
+        </div>
+    </form>
+    
     
     
     
@@ -71,5 +96,35 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('seleccionAnimal').addEventListener('change', function() {
+            const opcionesAnimales = document.getElementById('opcionesAnimales');
+            const selectOpciones = opcionesAnimales.querySelector('select');
+        
+            
+            selectOpciones.innerHTML = '';
+        
+            if (this.value === 'perro') {
+                ['Perro1', 'Perro2', 'Perro3', 'Perro4', 'Perro5', 'Perro6', 'Perro7', 'Perro8'].forEach(perro => {
+                    const option = document.createElement('option');
+                    option.value = perro.toLowerCase();
+                    option.textContent = perro;
+                    selectOpciones.appendChild(option);
+                });
+                opcionesAnimales.style.display = 'block';
+            } else if (this.value === 'gato') {
+                ['Gato1', 'Gato2', 'Gato3', 'Gato4', 'Gato5', 'Gato6', 'Gato7', 'Gato8'].forEach(gato => {
+                    const option = document.createElement('option');
+                    option.value = gato.toLowerCase();
+                    option.textContent = gato;
+                    selectOpciones.appendChild(option);
+                });
+                opcionesAnimales.style.display = 'block';
+            } else {
+                opcionesAnimales.style.display = 'none';
+            }
+        });
+        </script>
+        
 </body>
 </html>
