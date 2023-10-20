@@ -75,7 +75,7 @@ header, .imagenFooter {
   width: 100%;
 }
 .imagenMain .img {
-  width: 50%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
@@ -169,6 +169,23 @@ header, .imagenFooter {
 
 .animal p {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .d-flex {
+    flex-wrap: wrap;
+  }
+  .carousel-inner .animal {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-inner .d-flex {
+    flex-wrap: wrap;
+  }
+  .carousel-inner .animal {
+    width: 48%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

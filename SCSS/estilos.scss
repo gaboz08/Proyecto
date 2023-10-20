@@ -88,7 +88,7 @@ header, .imagenFooter {
     width: 100%;
 
     .img {
-        width: 50%;
+        width: 100%;
         height: auto;
         object-fit: cover;
         margin: 0 auto;
@@ -195,3 +195,28 @@ header, .imagenFooter {
 .animal p {
     margin-top: 10px; 
 }
+
+
+.carousel-inner {
+    @media (max-width: $medium-screen) {
+        .d-flex {
+            flex-wrap: wrap;
+        }
+
+        .animal {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: $medium-screen) and (max-width: 1024px) {
+        .d-flex {
+            flex-wrap: wrap;
+        }
+
+        .animal {
+            width: 48%; 
+        }
+    }
+}
+
+
