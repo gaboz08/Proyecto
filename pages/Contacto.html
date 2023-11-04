@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fauna Urbana</title>
+    <title>Contacto - Comunícate con Fauna Urbana para Adopciones y Consultas</title>
+    <meta name="description" content="Ponte en contacto con Fauna Urbana para adoptar una mascota, hacer consultas o colaborar con nuestra causa. Completa el formulario o visita nuestras instalaciones.">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -111,7 +112,7 @@
             selectOpciones.innerHTML = '';
         
             if (this.value === 'perro') {
-                ['Perro1', 'Perro2', 'Perro3', 'Perro4', 'Perro5', 'Perro6', 'Perro7', 'Perro8'].forEach(perro => {
+                ['Rocky', 'Reina', 'Diva', 'Rayo', 'Risos', 'America', 'Vito', 'Jose'].forEach(perro => {
                     const option = document.createElement('option');
                     option.value = perro.toLowerCase();
                     option.textContent = perro;
@@ -119,7 +120,7 @@
                 });
                 opcionesAnimales.style.display = 'block';
             } else if (this.value === 'gato') {
-                ['Gato1', 'Gato2', 'Gato3', 'Gato4', 'Gato5', 'Gato6', 'Gato7', 'Gato8'].forEach(gato => {
+                ['GPatricio', 'Pedro', 'Gala', 'Nala', 'Aleman', 'Amor', 'Amapola', 'Raya'].forEach(gato => {
                     const option = document.createElement('option');
                     option.value = gato.toLowerCase();
                     option.textContent = gato;
